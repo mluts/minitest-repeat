@@ -1,10 +1,14 @@
 module Minitest
   def self.plugin_repeat_init(*)
+    @count = 1
+
+    return if respond_to?(:__orig_run)
+
     instance_eval do
       alias :__orig_run :__run
 
       def __run(*args)
-        @count.to_i.times { __orig_run(*args) }
+        @count.times { __orig_run(*args) }
       end
     end
   end
