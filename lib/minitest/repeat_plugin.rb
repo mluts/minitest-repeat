@@ -1,6 +1,6 @@
 module Minitest
   def self.plugin_repeat_init(*)
-    @count = 1
+    @count ||= 1
 
     return if respond_to?(:__orig_run)
 

@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'minitest-repeat'
-  spec.version       = '0.1.1'
+  spec.version       = '0.1.2'
   spec.authors       = ['Michael Lutsiuk']
   spec.email         = ['michael.lutsiuk@gmail.com']
   spec.summary       = 'Allows to run your minitest suites more than one time'
